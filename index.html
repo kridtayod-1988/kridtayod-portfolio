@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Coordinator Portfolio | กฤตยชญ์ กุลกลางดอน</title>
+  <meta name="description" content="Project Coordinator Portfolio ของกฤตยชญ์ กุลกลางดอน — ประสบการณ์ประสานงานโครงการภาครัฐ ติดตามงานภาคสนาม และสร้างเครื่องมือช่วยงานด้วย Google Apps Script">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Project Coordinator Portfolio | กฤตยชญ์ กุลกลางดอน">
+  <meta property="og:description" content="ประสานงานโครงการภาครัฐ ติดตามงาน จัดทำรายงาน และสร้างเครื่องมือช่วยงานด้วย Google Apps Script">
+  <meta property="og:image" content="https://kridtayod-portfolio.netlify.app/images/profile.png">
+  <meta property="og:url" content="https://kridtayod-portfolio.netlify.app/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ตั้งธีมก่อนแสดงผล เพื่อไม่ให้หน้าจอกะพริบ -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <span class="brand-name">กฤตยชญ์ กุลกลางดอน</span>
+        <span class="brand-role">Project Coordinator</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="เมนูหลัก">
+        <ul>
+          <li><a href="#about">เกี่ยวกับ</a></li>
+          <li><a href="#projects">ผลงาน</a></li>
+          <li><a href="#skills">ทักษะ</a></li>
+          <li><a href="#experience">ประสบการณ์</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="สลับโหมดสว่าง/มืด">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="เปิดเมนู" aria-controls="site-nav" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Project Coordinator Portfolio</p>
+          <h1>กฤตยชญ์ กุลกลางดอน</h1>
+          <p class="hero-role">ผู้สมัครตำแหน่ง Project Coordinator (เจ้าหน้าที่ประสานงานโครงการ)</p>
+          <p class="hero-value">
+            มีประสบการณ์ประสานงานและติดตามงานในโครงการภาครัฐ จัดทำรายงานส่งต่อผู้รับผิดชอบ
+            และสร้างเครื่องมือช่วยงานด้วย Google Apps Script เพื่อลดงานเอกสารที่ทำซ้ำ
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">ดูผลงาน</a>
+            <a href="#contact" class="btn btn-ghost">ติดต่อ</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>สถานะ</dt><dd>พร้อมเริ่มงานประจำ</dd></div>
+            <div><dt>พื้นที่</dt><dd>เขตจตุจักร กรุงเทพฯ</dd></div>
+            <div><dt>การศึกษา</dt><dd>ป.ตรี รัฐศาสตร์</dd></div>
+          </dl>
+        </div>
+        <div class="hero-photo">
+          <img src="images/profile.png" alt="กฤตยชญ์ กุลกลางดอน" width="796" height="1024">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2 class="section-title">เกี่ยวกับฉัน</h2>
+        <p class="lead">
+          มีพื้นฐานด้าน<strong>รัฐศาสตร์</strong> (มหาวิทยาลัยรามคำแหง) สนใจงานด้าน<strong>การประสานงานและติดตามความคืบหน้าโครงการ</strong>
+          มีทักษะการประสานงานกับหลายฝ่าย การแบ่งงานและติดตามงาน การจัดทำรายงาน และการสร้างเครื่องมือช่วยงานด้วย Google Apps Script
+          ซึ่งได้ฝึกใช้ผ่านงานผู้ประสานงานแขวงในโครงการภาครัฐ งานติดตามข้อมูลในพื้นที่ร่วมกับผู้นำชุมชน งานให้บริการข้อมูลประกันสังคม และงานฟรีแลนซ์
+          และกำลังมองหาโอกาส<strong>งานประจำในตำแหน่ง Project Coordinator</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">ผลงานเด่น</h2>
+        <p class="section-intro">คัดเฉพาะงานที่เกี่ยวข้องกับการประสานงานโครงการ แต่ละชิ้นแยกให้เห็นว่าส่วนไหนเป็นงานที่ทำเอง และส่วนไหนเป็นงานของทีม</p>
+
+        <div class="project-list">
+
+          <!-- โปรเจกต์ 1 -->
+          <article class="project-card" id="project-district">
+            <header class="project-head">
+              <span class="project-no">01</span>
+              <div>
+                <h3>ผู้ประสานงานแขวง โครงการภาครัฐ</h3>
+                <p class="project-meta">
+                  <span class="tag tag-type">งานจริง</span>
+                  คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ บางเขน · ก.ค.–ก.ย. 2565
+                </p>
+              </div>
+            </header>
+            <dl class="project-body">
+              <div><dt>บทบาท</dt><dd>ผู้ประสานงานแขวง ดูแลงานของแขวงที่ได้รับมอบหมาย</dd></div>
+              <div><dt>เป้าหมาย</dt><dd>รวบรวมและส่งมอบงานของแขวงให้คณะกรรมการส่วนกลางครบและตรงเวลา</dd></div>
+              <div><dt>ส่วนที่ทำเอง</dt><dd>แบ่งภาระงานให้ผู้ปฏิบัติงานในแขวง ติดตามความคืบหน้า ตรวจสอบงาน และส่งมอบงานให้ส่วนกลาง</dd></div>
+              <div><dt>ส่วนของทีม</dt><dd>คณะกรรมการส่วนกลางวางแผนและกำหนดแนวทางโครงการ ผู้ปฏิบัติงานในแขวงเก็บข้อมูลภาคสนาม</dd></div>
+              <div><dt>เครื่องมือ</dt><dd><span class="placeholder">[กรอกข้อมูล: เช่น Google Sheets, LINE กลุ่ม, แบบฟอร์มติดตามงาน]</span></dd></div>
+              <div><dt>ผลลัพธ์</dt><dd><span class="placeholder">[กรอกข้อมูล: เช่น จำนวนผู้ปฏิบัติงานที่ดูแล / จำนวนงานที่ส่งมอบ]</span></dd></div>
+            </dl>
+            <p class="project-skills">ทักษะที่ใช้: <a href="#skill-coordinate">ประสานงานหลายฝ่าย</a> · <a href="#skill-tracking">ติดตามงานและรายงาน</a></p>
+          </article>
+
+          <!-- โปรเจกต์ 2 -->
+          <article class="project-card" id="project-housing">
+            <header class="project-head">
+              <span class="project-no">02</span>
+              <div>
+                <h3>ติดตามและประสานงานปัญหาที่พักอาศัยในพื้นที่</h3>
+                <p class="project-meta">
+                  <span class="tag tag-type">งานจริง</span>
+                  บัณฑิตจบใหม่ คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ บางเขน · ก.พ.–ธ.ค. 2564
+                </p>
+              </div>
+            </header>
+            <dl class="project-body">
+              <div><dt>บทบาท</dt><dd>เจ้าหน้าที่ติดตามและประสานงานในพื้นที่ (ตำแหน่งบัณฑิตจบใหม่)</dd></div>
+              <div><dt>เป้าหมาย</dt><dd>เก็บข้อมูลปัญหาที่พักอาศัยตามแบบฟอร์มของโครงการ และส่งต่อข้อมูลเพื่อใช้วางแผนช่วยเหลือ</dd></div>
+              <div><dt>ส่วนที่ทำเอง</dt><dd>ติดตามกรณีตามแบบฟอร์ม ประสานงานกับประธานหมู่บ้านและตำบลที่รับผิดชอบ บันทึกข้อมูล และจัดทำรายงานนำเสนอ</dd></div>
+              <div><dt>ส่วนของทีม</dt><dd>ทีมโครงการกำหนดแบบฟอร์มและนำข้อมูลไปใช้ต่อ ผู้นำชุมชนช่วยประสานกับครัวเรือนในพื้นที่</dd></div>
+              <div><dt>เครื่องมือ</dt><dd><span class="placeholder">[กรอกข้อมูล: เครื่องมือที่ใช้บันทึกและรายงานข้อมูล]</span></dd></div>
+              <div><dt>ผลลัพธ์</dt><dd><span class="placeholder">[กรอกข้อมูล: เช่น จำนวนครัวเรือน/พื้นที่ที่ติดตาม จำนวนรายงานที่จัดทำ]</span></dd></div>
+            </dl>
+            <p class="project-skills">ทักษะที่ใช้: <a href="#skill-coordinate">ประสานงานหลายฝ่าย</a> · <a href="#skill-tracking">ติดตามงานและรายงาน</a> · <a href="#skill-community">ทำงานร่วมกับผู้นำชุมชน</a></p>
+          </article>
+
+          <!-- โปรเจกต์ 3 -->
+          <article class="project-card" id="project-qtc">
+            <header class="project-head">
+              <span class="project-no">03</span>
+              <div>
+                <h3>QTC Hub — ระบบช่วยตรวจสอบคุณภาพเอกสาร</h3>
+                <p class="project-meta">
+                  <span class="tag tag-type">Web App</span>
+                  <span class="placeholder">[ระบุประเภท: งานฟรีแลนซ์ / โปรเจกต์ส่วนตัว]</span> · <span class="placeholder">[ปีที่ทำ]</span>
+                </p>
+              </div>
+            </header>
+            <dl class="project-body">
+              <div><dt>บทบาท</dt><dd>ผู้พัฒนาระบบ <span class="placeholder">[ระบุว่าทำคนเดียวหรือร่วมกับผู้อื่น]</span></dd></div>
+              <div><dt>เป้าหมาย</dt><dd>ลดเวลาตรวจเอกสาร Drawing และการเขียน Memo ด้วยมือ</dd></div>
+              <div><dt>ส่วนที่ทำเอง</dt><dd>สร้าง Web App ด้วย Google Apps Script เชื่อมต่อ Gemini API เพื่อวิเคราะห์เอกสาร Drawing และสร้าง Memo อัตโนมัติ</dd></div>
+              <div><dt>ส่วนของทีม</dt><dd><span class="placeholder">[กรอกข้อมูล: เช่น ผู้ใช้งาน/ลูกค้าที่ให้ความต้องการและทดสอบระบบ]</span></dd></div>
+              <div><dt>เครื่องมือ</dt><dd>Google Apps Script, Gemini API, Google Workspace</dd></div>
+              <div><dt>ผลลัพธ์</dt><dd><span class="placeholder">[กรอกข้อมูล: เช่น เวลาที่ลดลงต่อเอกสาร / จำนวนผู้ใช้งาน]</span></dd></div>
+            </dl>
+            <p class="project-skills">ทักษะที่ใช้: <a href="#skill-gas">Google Apps Script</a> · <a href="#skill-ai">Gemini API</a></p>
+            <a class="project-link" href="https://script.google.com/macros/s/AKfycbx-bqG6Ci66irHjrz2mmhT-ck2zjNa9ZVwHaiFq9pRu68-eT8d6rxUbU4XuK8FASmyJ/exec" target="_blank" rel="noopener noreferrer">เปิดดู QTC Hub ↗</a>
+          </article>
+
+          <!-- โปรเจกต์ 4 -->
+          <article class="project-card" id="project-sso">
+            <header class="project-head">
+              <span class="project-no">04</span>
+              <div>
+                <h3>SSO 1506 Simulator — ระบบจำลองการให้บริการข้อมูลประกันสังคม</h3>
+                <p class="project-meta">
+                  <span class="tag tag-type">Web App</span>
+                  <span class="placeholder">[ระบุประเภท: โปรเจกต์ส่วนตัว / งานฟรีแลนซ์]</span> · <span class="placeholder">[ปีที่ทำ]</span>
+                </p>
+              </div>
+            </header>
+            <dl class="project-body">
+              <div><dt>บทบาท</dt><dd>ผู้ออกแบบสถานการณ์และพัฒนาระบบ</dd></div>
+              <div><dt>เป้าหมาย</dt><dd>ใช้ฝึกตอบคำถามสิทธิประกันสังคมจากสถานการณ์จำลอง ก่อนให้บริการจริง</dd></div>
+              <div><dt>ส่วนที่ทำเอง</dt><dd>นำความรู้จากงานให้บริการข้อมูลประกันสังคม (กรณีว่างงาน สิทธิรักษาพยาบาล) มาออกแบบสถานการณ์ และสร้างระบบด้วย Google Apps Script</dd></div>
+              <div><dt>ส่วนของทีม</dt><dd><span class="placeholder">[กรอกข้อมูล หรือลบหัวข้อนี้หากทำคนเดียว]</span></dd></div>
+              <div><dt>เครื่องมือ</dt><dd>Google Apps Script</dd></div>
+              <div><dt>ผลลัพธ์</dt><dd><span class="placeholder">[กรอกข้อมูล: เช่น จำนวนสถานการณ์ในระบบ / ผู้ที่นำไปใช้ฝึก]</span></dd></div>
+            </dl>
+            <p class="project-skills">ทักษะที่ใช้: <a href="#skill-gas">Google Apps Script</a> · <a href="#skill-communicate">สื่อสารข้อมูลให้เข้าใจง่าย</a></p>
+            <a class="project-link" href="https://script.google.com/macros/s/AKfycbxtim2hUNQM5-bZtJDf283R9HOaXH8TWCMssquQ5X5DIYLT1ZOyj4jkMvmQaNm3nRRy/exec" target="_blank" rel="noopener noreferrer">เปิดดู SSO 1506 Simulator ↗</a>
+          </article>
+
+          <!--
+            เพิ่มโปรเจกต์ที่ 5 ได้โดยคัดลอก <article class="project-card"> ด้านบน
+            แล้วแก้ชื่อ ประเภท บทบาท เป้าหมาย ส่วนที่ทำเอง ส่วนของทีม เครื่องมือ และผลลัพธ์
+            ถ้าเป็นงานที่สร้างขึ้นเพื่อฝึกฝน ให้ใช้ป้าย <span class="tag tag-type">โปรเจกต์จำลอง</span>
+          -->
+        </div>
+
+        <!-- วิดีโอสาธิต -->
+        <div class="demo">
+          <div class="demo-text">
+            <h3>วิดีโอสาธิตระบบ Web App</h3>
+            <p>ตัวอย่างการทำงานของระบบที่พัฒนาด้วย Google Apps Script</p>
+            <p class="demo-more">ผลงานอื่นที่เกี่ยวข้อง:
+              <a href="https://script.google.com/macros/s/AKfycbzNxL2ZN2bpzjiypGPN4V1cfzi3ITpGhpWv8uekJ5-C2FD23nFBqTU8b9L93Aktsslk/exec" target="_blank" rel="noopener noreferrer">ระบบจำลองแนวข้อสอบ ก.พ. ออนไลน์ ↗</a>
+            </p>
+          </div>
+          <video controls preload="metadata" playsinline>
+            <source src="videos/VDO.mp4" type="video/mp4">
+            เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">ทักษะพร้อมหลักฐาน</h2>
+        <p class="section-intro">แต่ละทักษะเชื่อมกับงานที่ได้ใช้จริง กดลิงก์เพื่อดูรายละเอียดของงานนั้น</p>
+
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>ทักษะด้านงาน</h3>
+            <ul class="skill-list">
+              <li id="skill-coordinate">
+                <h4>ประสานงานหลายฝ่าย</h4>
+                <p>เป็นจุดกลางระหว่างคณะกรรมการ ผู้ปฏิบัติงาน และผู้นำชุมชน เพื่อให้งานเดินตามแผน</p>
+                <p class="evidence">หลักฐาน: <a href="#project-district">ผู้ประสานงานแขวง</a> · <a href="#project-housing">ติดตามปัญหาที่พักอาศัย</a></p>
+              </li>
+              <li id="skill-tracking">
+                <h4>ติดตามงานและจัดทำรายงาน</h4>
+                <p>แบ่งงาน ติดตามความคืบหน้า บันทึกข้อมูล และสรุปเป็นรายงานส่งผู้รับผิดชอบ</p>
+                <p class="evidence">หลักฐาน: <a href="#project-district">ผู้ประสานงานแขวง</a> · <a href="#project-housing">ติดตามปัญหาที่พักอาศัย</a> · <a href="#exp-truetouch">งานบริการข้อมูลโครงการภาครัฐ</a></p>
+              </li>
+              <li id="skill-schedule">
+                <h4>วางแผนและจัดตารางงาน</h4>
+                <p>จัดตารางการทำงานของพนักงาน วางแผนงานหน้าร้าน และสรุปยอดขายเป็นรายงาน</p>
+                <p class="evidence">หลักฐาน: <a href="#exp-central">Shop Supervisor เซ็นทรัล รีเทล</a></p>
+              </li>
+              <li>
+                <h4>การบริหารความเสี่ยงและไทม์ไลน์โครงการ</h4>
+                <p>ทักษะที่ต้องใช้ในงาน Project Coordinator</p>
+                <p class="evidence"><span class="placeholder">[เพิ่มผลงานที่แสดงทักษะนี้]</span></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>เครื่องมือ</h3>
+            <ul class="skill-list">
+              <li id="skill-gas">
+                <h4>Google Apps Script</h4>
+                <p>สร้าง Web App ใช้ Trigger และเชื่อมต่อ Google Workspace เพื่อลดงานที่ทำซ้ำ</p>
+                <p class="evidence">หลักฐาน: <a href="#project-qtc">QTC Hub</a> · <a href="#project-sso">SSO 1506 Simulator</a> · <a href="#exp-fastwork">งานฟรีแลนซ์</a></p>
+              </li>
+              <li id="skill-ai">
+                <h4>Gemini API</h4>
+                <p>ใช้ AI วิเคราะห์เอกสารและสร้างข้อความอัตโนมัติภายใน Web App</p>
+                <p class="evidence">หลักฐาน: <a href="#project-qtc">QTC Hub</a></p>
+              </li>
+              <li>
+                <h4>Google Workspace (Sheets, Docs, Forms, Drive)</h4>
+                <p>จัดเก็บข้อมูล ทำแบบฟอร์ม และแชร์เอกสารสำหรับทำงานร่วมกัน</p>
+                <p class="evidence">หลักฐาน: <a href="#exp-fastwork">งานฟรีแลนซ์ด้านการจัดการข้อมูล</a> · <span class="placeholder">[เพิ่มผลงานที่แสดงทักษะนี้]</span></p>
+              </li>
+              <li>
+                <h4>เครื่องมือบริหารโครงการ</h4>
+                <p><span class="placeholder">[กรอกข้อมูล: เช่น Trello, Asana, Notion, Excel Gantt chart]</span></p>
+                <p class="evidence"><span class="placeholder">[เพิ่มผลงานที่แสดงทักษะนี้]</span></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>ทักษะการทำงานร่วมกับผู้อื่น</h3>
+            <ul class="skill-list">
+              <li id="skill-community">
+                <h4>ทำงานร่วมกับผู้นำชุมชน</h4>
+                <p>ประสานกับประธานหมู่บ้านและตำบลเพื่อเข้าถึงข้อมูลในพื้นที่</p>
+                <p class="evidence">หลักฐาน: <a href="#project-housing">ติดตามปัญหาที่พักอาศัย</a></p>
+              </li>
+              <li id="skill-communicate">
+                <h4>สื่อสารข้อมูลให้เข้าใจง่าย</h4>
+                <p>อธิบายสิทธิประกันสังคม เช่น กรณีว่างงานและสิทธิรักษาพยาบาล ให้ผู้ใช้บริการเข้าใจ</p>
+                <p class="evidence">หลักฐาน: <a href="#exp-truetouch">งานบริการข้อมูลโครงการภาครัฐ</a> · <a href="#project-sso">SSO 1506 Simulator</a></p>
+              </li>
+              <li>
+                <h4>ดูแลและสอนงานพนักงานใหม่</h4>
+                <p>ดูแลการทำงานของพนักงานหน้าร้านและฝึกอบรมพนักงานใหม่</p>
+                <p class="evidence">หลักฐาน: <a href="#exp-central">Shop Supervisor เซ็นทรัล รีเทล</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="section section-alt">
+      <div class="container narrow">
+        <h2 class="section-title">ประสบการณ์ทำงาน</h2>
+
+        <ol class="timeline">
+          <li id="exp-truetouch">
+            <p class="tl-date">พ.ค.–ก.ค. 2568</p>
+            <h3>เจ้าหน้าที่ให้บริการข้อมูลโครงการภาครัฐ</h3>
+            <p class="tl-org">บริษัท ทรูทัช</p>
+            <p>ให้ข้อมูลเรื่องประกันสังคม เช่น กรณีว่างงานและสิทธิรักษาพยาบาล ติดตามผลเรื่องที่รับไว้ และจัดทำรายงานสรุปข้อมูล</p>
+          </li>
+          <li id="exp-fastwork">
+            <p class="tl-date">2566–ปัจจุบัน</p>
+            <h3>ฟรีแลนซ์ ระบบอัตโนมัติและจัดการข้อมูล</h3>
+            <p class="tl-org">Fastwork (งานอิสระ)</p>
+            <p>รับงานสร้างระบบอัตโนมัติด้วย Google Apps Script จัดการข้อมูล และออกแบบเอกสารนำเสนอ</p>
+          </li>
+          <li id="exp-central">
+            <p class="tl-date">พ.ค.–ก.ค. 2566</p>
+            <h3>Shop Supervisor (ผู้ช่วยผู้จัดการร้าน)</h3>
+            <p class="tl-org">บริษัท เซ็นทรัล รีเทล คอร์ปอเรชั่น จำกัด (มหาชน)</p>
+            <p>ช่วยผู้จัดการวางแผนงาน จัดตารางงานพนักงาน ดูแลการทำงานหน้าร้าน ควบคุมสินค้า สรุปยอดขายและจัดทำรายงาน</p>
+          </li>
+          <li>
+            <p class="tl-date">ก.ค.–ก.ย. 2565</p>
+            <h3>ผู้ประสานงานแขวง โครงการภาครัฐ</h3>
+            <p class="tl-org">คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ บางเขน</p>
+            <p>แบ่งภาระงาน ติดตาม และส่งมอบงานของแขวงให้คณะกรรมการส่วนกลาง — <a href="#project-district">ดูรายละเอียด</a></p>
+          </li>
+          <li>
+            <p class="tl-date">ก.พ.–ธ.ค. 2564</p>
+            <h3>บัณฑิตจบใหม่ งานติดตามและประสานงานในพื้นที่</h3>
+            <p class="tl-org">คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ บางเขน</p>
+            <p>ติดตามปัญหาที่พักอาศัย ประสานงานกับผู้นำชุมชน บันทึกข้อมูลและทำรายงาน — <a href="#project-housing">ดูรายละเอียด</a></p>
+          </li>
+        </ol>
+
+        <details class="more-exp">
+          <summary>ประสบการณ์ด้านงานบริการและค้าปลีกก่อนหน้า</summary>
+          <ul>
+            <li><strong>พนักงานประจำร้านสะดวกซื้อ Jiffy</strong> — บริษัท ปตท. บริหารธุรกิจค้าปลีก จำกัด (ก.ย. 2560–ก.พ. 2561): เปิดร้าน จัดเรียงและตรวจสต๊อกสินค้า แคชเชียร์</li>
+            <li><strong>พนักงานร้านสะดวกซื้อ พาร์ทไทม์</strong> — CP ALL FOOD HALL (ต.ค. 2557–เม.ย. 2559): บริการลูกค้า แคชเชียร์ รับชำระค่าสาธารณูปโภค</li>
+            <li><strong>พนักงานเสิร์ฟอาหาร</strong> — บริษัท ใบไม้ร่าเริง จำกัด (ม.ค. 2549–ต.ค. 2552): รับออเดอร์ แนะนำเมนู ประสานงานกับครัว</li>
+          </ul>
+        </details>
+
+        <h2 class="section-title sub">การศึกษา</h2>
+        <div class="edu">
+          <h3>ปริญญาตรี คณะรัฐศาสตร์</h3>
+          <p class="tl-org">มหาวิทยาลัยรามคำแหง · สำเร็จการศึกษาปี 2563</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2 class="section-title">ติดต่อ</h2>
+        <p class="section-intro">ยินดีพูดคุยเรื่องตำแหน่ง Project Coordinator และนัดสัมภาษณ์</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">อีเมล</span>
+            <a href="mailto:kunklangdon@gmail.com">kunklangdon@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">พื้นที่</span>
+            <span>เขตจตุจักร กรุงเทพฯ</span>
+          </li>
+          <li>
+            <span class="contact-label">Fastwork</span>
+            <a href="https://fastwork.co/user/kridtayod/questionnaire-72980395?utm_source=app_sharing" target="_blank" rel="noopener noreferrer">ดูโปรไฟล์ฟรีแลนซ์ ↗</a>
+          </li>
+          <li>
+            <span class="contact-label">Facebook</span>
+            <a href="https://www.facebook.com/share/1CZ9ekqa8h/" target="_blank" rel="noopener noreferrer">ดูโปรไฟล์ ↗</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <span class="placeholder">[กรอกลิงก์ LinkedIn]</span>
+          </li>
+        </ul>
+        <a href="mailto:kunklangdon@gmail.com" class="btn btn-primary">ส่งอีเมล</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>กฤตยชญ์ กุลกลางดอน · Project Coordinator Portfolio</p>
+      <p>&copy; <span id="year">2026</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
