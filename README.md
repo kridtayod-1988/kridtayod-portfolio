@@ -110,5 +110,3 @@ https://www.google.com/search?q=LICENSE
 * **กฤตยชญ์ กุลกลางดอน**
 
 *  Email: kunklangdon@gmail.com
-
-* Tel: 097-831-2825  091-078-7047
