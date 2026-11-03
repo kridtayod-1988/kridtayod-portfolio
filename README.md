@@ -3,7 +3,7 @@
 
 **Live Demo** 
 
-( https://kridtayod.netlify.app )
+( https://kridtayod-portfolio.netlify.app )
 
 เว็บไซต์ Portfolio ส่วนตัวสำหรับสมัครงานตำแหน่ง 
 
