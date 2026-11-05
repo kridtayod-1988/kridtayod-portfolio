@@ -12,24 +12,24 @@ Modern Frontend (Vanilla JS) เน้นความเร็ว ความ�
 
 ## คุณสมบัติเด่น
 
-* ** Hybrid Theme : ** ระบบสลับ Light/Dark Mode เพื่อถนอมสายตา
+* ** Hybrid Theme :** ระบบสลับ Light/Dark Mode เพื่อถนอมสายตา
 
-* ** fully Responsive : ** แสดงผลสมบูรณ์แบบทั้งบน Desktop, Tablet และ Mobile
+* ** fully Responsive :** แสดงผลสมบูรณ์แบบทั้งบน Desktop, Tablet และ Mobile
 
-* ** SPA Experience : ** การนำทางแบบ Single Page Application ไหลลื่น ไม่ต้องโหลดหน้าใหม่
+* ** SPA Experience :** การนำทางแบบ Single Page Application ไหลลื่น ไม่ต้องโหลดหน้าใหม่
 
-* ** AI Integrated Showcase : ** แสดงผลงานระบบอัตโนมัติที่เชื่อมต่อ Gemini AI API
+* ** AI Integrated Showcase :** แสดงผลงานระบบอัตโนมัติที่เชื่อมต่อ Gemini AI API
 
-* ** Clean UI : ** ออกแบบโดยเน้นความอ่านง่าย (Readability) ด้วยฟอนต์ Kanit
+* ** Clean UI :** ออกแบบโดยเน้นความอ่านง่าย (Readability) ด้วยฟอนต์ Kanit
 
 
 ##  เทคโนโลยีที่ใช้
 
-* **Core : ** HTML5, CSS3 (Variables), JavaScript (ES6+)
+* **Core : **HTML5, CSS3 (Variables), JavaScript (ES6+)
 
-* **Design : ** Google Fonts (Kanit), Font Awesome 6
+* **Design : **Google Fonts (Kanit), Font Awesome 6
 
-* **Deployment : ** Netlify, GitHub Actions
+* **Deployment :** Netlify, GitHub Actions
 
 ## 📂 โครงสร้างโปรเจกต์
 
@@ -38,9 +38,11 @@ portfolio-kridtayod/
 ├── index.html      # โครงสร้างหลักของเว็บไซต์
 
 ├── css/
+
 │   └── styles.css # สไตล์และระบบ Theme (CSS Variables)
 
 ├── js/
+
 │   └── main.js    # Theme Toggle, Mobile Menu และไฮไลต์เมนูตามตำแหน่งที่อ่าน
 
 ├── images/         # รูปภาพประกอบและโปรไฟล์
@@ -67,15 +69,15 @@ portfolio-kridtayod/
 
 ### 3. การเพิ่มการตอบโต้ (JavaScript Interaction)
 
-* **Theme Engine : ** เขียน Logic สลับ Class `.dark-mode` และจัดเก็บค่าลงใน LocalStorage
+* **Theme Engine :** เขียน Logic สลับ Class `.dark-mode` และจัดเก็บค่าลงใน LocalStorage
 
-* **Mobile Navigation : ** สร้างเมนู Hamburger ที่ทำงานร่วมกับ CSS Transition
+* **Mobile Navigation :** สร้างเมนู Hamburger ที่ทำงานร่วมกับ CSS Transition
 
-* **Smooth Navigation : ** ใช้ JavaScript ดักจับเหตุการณ์คลิก เพื่อทำ Smooth Scroll แทนระบบเดิม
+* **Smooth Navigation :** ใช้ JavaScript ดักจับเหตุการณ์คลิก เพื่อทำ Smooth Scroll แทนระบบเดิม
 
 ### 4. การผสานผลงาน AI Automation (Showcase Integration)
 
-* เพิ่มส่วนแสดงวิดีโอสาธิตการใช้ **Google Apps Script** และ **Gemini AI**
+* เพิ่มส่วนแสดงวิดีโอสาธิตการใช้**Google Apps Script** และ **Gemini AI**
 * ปรับแต่งลิงก์ Web App ให้เป็นปุ่ม Call-to-Action ที่ชัดเจน
 
 ### 5. การตรวจสอบคุณภาพ (Quality Assurance)
@@ -100,8 +102,8 @@ cd portfolio-kridtayod
 
 ## Deploy
 
-* **Netlify : ** เพียงลากโฟลเดอร์โปรเจกต์วางบนแผงควบคุมของ Netlify
-* **GitHub Pages : ** ตั้งค่า Source ไปที่ Branch `main` ในเมนู Settings
+* **Netlify : **เพียงลากโฟลเดอร์โปรเจกต์วางบนแผงควบคุมของ Netlify
+* **GitHub Pages : **ตั้งค่า Source ไปที่ Branch `main` ในเมนู Settings
 
 
 ## สัญญาอนุญาต
